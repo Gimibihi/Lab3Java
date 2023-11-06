@@ -1,0 +1,7 @@
+Rowling;Philospher's Stone;1997;246;37;Fantasy;
+Rowling;Deathly Hallows;2007;607;8;Fantasy;
+Lee;Mockingbird;1960;428;24;Novel;
+Morrison;Beloved;1987;845;30;Novel;
+Aurelius;Meditations;1500;123;50;Philosophy;
+Plato;Republic;1994;256;10;Philosophy;
+McCullough;1776;2005;476;13;History;
