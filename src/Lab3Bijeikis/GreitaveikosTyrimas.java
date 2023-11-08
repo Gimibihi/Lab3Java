@@ -20,7 +20,7 @@ public class GreitaveikosTyrimas {
     private static final ResourceBundle MESSAGES = ResourceBundle.getBundle("Lab3Bijeikis.Gui.messages");
 
     private static final String[] TYRIMU_VARDAI = {"addBstRec", "addBstIte", "addAvlRec", "removeBst", "ContainsBst"};
-    private static final int[] TIRIAMI_KIEKIAI = {100000, 200000, 400000, 800000};
+    private static final int[] TIRIAMI_KIEKIAI = {10000, 20000, 40000, 80000};
 
     private final BlockingQueue resultsLogger = new SynchronousQueue();
     private final Semaphore semaphore = new Semaphore(-1);
@@ -79,7 +79,7 @@ public class GreitaveikosTyrimas {
                 tk.finish(TYRIMU_VARDAI[3]);
                 for(Kompiuteris a : kompMas){
                     Kompiuteris[] element = DuomGeneravimas.generuoti(1);
-                    aSeries.contains(element[0]);
+                    aSeries2.contains(element[0]);
                 }
                 tk.finish(TYRIMU_VARDAI[4]);
                 tk.seriesFinish();

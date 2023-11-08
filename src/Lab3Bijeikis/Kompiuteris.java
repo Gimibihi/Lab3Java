@@ -293,6 +293,9 @@ public class Kompiuteris implements KTUable<Kompiuteris> {
         return getID().compareTo(o.getID());
     }
 
+    /**
+     * Builder klase kuri sugeneruoja duomenis
+     */
     public static class Builder{
         private final static Random RANDOM = new Random(1949);
         private final static String[][]  MODELIAI = {
@@ -308,10 +311,18 @@ public class Kompiuteris implements KTUable<Kompiuteris> {
         private int nasumas = -1;
         private double kaina = -1.0;
 
+        /**
+         * Metodas sukurti nauja objekta
+         * @return nauja Kompiuteris objekta
+         */
         public Kompiuteris build(){
             return new Kompiuteris(this);
         }
 
+        /**
+         * Metodas kuris sugeneruoja objekta pagal nustatytus duomenis
+         * @return naujas objektas
+         */
         public Kompiuteris buildRandom(){
             int ma = RANDOM.nextInt(MODELIAI.length);
             int mo = RANDOM.nextInt(MODELIAI[ma].length);
